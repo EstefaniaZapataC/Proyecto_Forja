@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --negro-color:#191919;
+    --blanco-color:#FFFFFF;
+    --rojo-color:#a40101;
+    --blue-color:#2ca3ab;
+    --gray-color:#c4c4c4;
+    --naranja-color:#f3610e;
+    --dark-blue-color:#1d1b45;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif; 
+    font-size: 16px;
+}
+
+p{ 
+ font-family:'Poppins', sans-serif; 
+}
+
+.hh1 {
+    background-color: var(--dark-blue-color);
+    height: 50px;
+    font-size: 16px;
+    color: white;
+    font-weight: 200;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    background-color: #191919;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; 
+    padding-right: 2rem;
+}
+
+.botones{
+    justify-content: space-between;
+}
+.botonp{
+    border-radius: 55%;
+    justify-content: space-between;
+
+}
+
+.franjap img{
+    max-width:max-content;
+    height: 80px;
+    margin: 0;
+
+}
+
+.hh1{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+
+    
+}
+
+main{
+    justify-content: center;
+    align-items: center;
+}
+.hh1 h1{
+   
+flex-direction: row;
+font-size: 20px;
+font-weight:400;
+}
+
+.hh1{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    justify-content: center;
+}
+
+
+.d1 h2{
+    background-color: #2ca3ab;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+main{
+    width: 80%;
+    border:2px solid;
+    border-color:gray ;
+    margin: 5px 5px 5px 5px;
+    padding: 1rem 1rem 1rem 1rem; justify-items: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#form-container{
+    margin: 5px 5px 5px 5px;
+    padding: 1rem 1rem 1rem 1rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+    
+
+#form-container{
+    border:2px solid;
+    border-color: gray;
+    background: #c4c4c4;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 2rem;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+
+}
+
+.form-input{
+    border: solid 1px var(--blue-color);
+    color: #c4c4c4;
+    margin: 1rem;
+}
+
+
+.datos-paciente3 form-group {
+    flex-basis: 47%;
+     justify-content: space-around;
+}
+
+.fecha-registro{
+    width: 300px;
+    flex-basis: 47%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.datos-paciente3{
+    flex-basis: 47%;
+    justify-content: space-around;
+}
+ .datos-paciente2{
+     flex-basis: 47%;
+     justify-content: space-around;
+ }
+
+ .datos-paciente1{
+    flex-basis: 47%;
+    justify-content: space-around;
+
+}
+.datos-paciente3{
+    flex-basis: 47%;
+    justify-content: space-between;
+
+}
+
+
+footer{
+    height: 50px;
+    background: #191919;
+    color: white;
+    
+    
+}
+
+footer p{
+    align-items: center;
+    justify-content: center;
+}
+
+.guardar {
+    color: #FFFFFF;
+    background:#f3610e;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 3px;
+    border: solid 1px #f3610e;
+    display: flex;
+    align-items: center;
+justify-content: center;
+}
+
+.dd1 i{ 
+    display: flex;
+    justify-items: left;
+}
+ 
+.form-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.guardar{
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    position: relative;
+    left: 50%;
+    width: 100px;
+    height: 30px;
+}
+
+#form-container{
+    width: 80%;
+}
+
+.h1{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
