@@ -148,7 +148,7 @@ justify-content: space-between;
 .glass{
     background-color: white;
     border-radius: 5px;
-    border: 2px solid#2CA3AB;
+    border: 2px solid #2CA3AB;
     font-weight: bold;
     cursor: pointer;
     color: #fff;
@@ -200,8 +200,7 @@ footer{
     background: #a40101;
     border: 1px solid var(--rojo-color);
     border-radius: 5px;
-
-}
+} 
 
 .tablap tr, td, th {
     border: 2px solid var(--blue-color);
@@ -225,7 +224,7 @@ footer{
 .form-group{
     width: 100px;
     height: 20px;
-    justify-content: 
+ 
 }
 
 .datos-paciente{

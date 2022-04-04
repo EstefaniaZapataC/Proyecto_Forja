@@ -33,7 +33,7 @@ header{
 
 header p{
     align-items: center;
-    margin: 2rem;
+    margin-left: 7rem;
     margin-top: 5px;
 }
 
@@ -76,10 +76,7 @@ body{
       padding-left: 7rem ;  
   }
 
-    .boton2{
-      margin-left: 9rem;
-  }
-
+  
   .contenedor-medio{
       background-image: url(../img/franja.png);
       background-repeat: no-repeat;
@@ -103,6 +100,13 @@ body{
       height: 30px;
   }
 
+  .boto1{
+     display: flex;
+     position: absolute;
+     left: 85%;
+      
+  }
+
   .boton2{
     background-color: #1d1b45;
     font-size: 14px;
@@ -112,6 +116,10 @@ body{
     width: 130px;
     height: 30px;
   }
+
+  .boton2{
+    margin-left: 9rem;
+}
   
   .contenedor-inferior{
       display: flex;
@@ -123,42 +131,63 @@ body{
       width: 100%;
       font-weight: 500;
       justify-content: space-between;
+      font-size: large;
   }
+  
+  ul{
+      list-style: none;
+  }
+
+  
    .link{
        color: #1A5276;
+       padding: 5px;
    } 
 
      
     .contenedor-inferior h3{
-        color: var(--dark-blue-color);
+        color:#1A5276;
         font-weight: 600;
         font: size 20px; ;
     
       }
 
   .signos h3{
-      color: var(--dark-blue-colorblue-color);
+      color: #1a5276;
       font-weight: 600;
       font-size: 20px;
 
   }
 
-  .contenedor-inferior i{
-      color: #a40101;
-  }
-.signos{
+  .signos{
     margin-left: 5rem;
     margin-right: 5rem;
 }
+
+.que-hacer i{
+    color: #a40101;
+}
+  .contenedor-inferior img{
+    margin-right: -2rem;
+    justify-content: center;
+    align-self: center;
+  }
+
   .que-hacer{
       display: flex;
       flex-direction: column;
       text-align: center;
-      align-content:space-between;
+      align-content:center;
       margin-left: 5rem;
+      margin-right: 5rem;
     
   }
 
+
+  .que-hacer p{
+      justify-content: left;
+      align-items: center;
+  }
 
    .logooms{
     width: 100px;
@@ -201,3 +230,6 @@ body{
       background-color: #191919;
       color: white;
   }
+
+
+/*----Estilos LOGIN--*/
