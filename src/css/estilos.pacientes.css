@@ -135,3 +135,112 @@ h1 {
     border-radius: 5px;
 } 
 
+@media screen and (min-width: 320px ) {
+    header{
+        grid-area: header;
+        flex-direction: column;
+        max-width: 700px;
+        height: 200px;
+        grid-auto-flow: dense;
+        grid-auto-rows: 22rem;
+        grid-template-columns: repeat(auto-fit, minmax(1, 25rem) 1fr );
+        padding-left: 10px;
+   }
+   .segundo-contenedor{
+    flex-direction: column;
+    max-width: 700px;
+    height: auto;
+    grid-auto-flow: dense;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fit, minmax(1, 25rem) 1fr );
+    padding-left: 10px;
+   }
+
+   .tercer-contenedor{
+    flex-direction: column;
+    max-width: 700px;
+    height: auto;
+    grid-auto-flow: dense;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fit, minmax(1, 25rem) 1fr );
+    padding-left: 10px;
+
+   }
+  
+
+   .tabla{
+    flex-direction: column;
+    grid-auto-flow: dense;
+    grid-auto-rows: 15rem;
+    grid-template-columns: repeat(auto-fit, minmax(1, 40rem) 6fr );
+    justify-content: left;
+    margin: 0;
+    
+  
+   }
+
+   table {
+       display: block;
+       overflow-x: auto;
+   }
+
+@media screen and (min-width: 700px ) {
+    header{
+        grid-area: header;
+        flex-direction: column;
+        max-width: 1024px;
+        height: 200px;
+        grid-auto-flow: dense;
+        grid-auto-rows: 22rem;
+        grid-template-columns: repeat(auto-fit, minmax(1, 25rem) 1fr );
+        padding-left: 10px;
+   }
+}
+   @media screen and (min-width: 1024px ) {
+    header{
+        grid-area: header;
+        flex-direction: row;
+        max-width: 1200px;
+        width: 100%;
+        height: 200px;
+        grid-auto-flow: dense;
+        grid-auto-rows: 22rem;
+        grid-template-columns: repeat(auto-fit, minmax(1, 25rem) 1fr );
+        padding-left: 10px;
+   }
+}
+
+   @media screen and (min-width: 1200px ) {
+    header{
+        grid-area: header;
+        flex-direction: row;
+        max-width: 1200px;
+        height: auto;
+        grid-auto-flow: dense;
+        grid-auto-rows: 22rem;
+        grid-template-columns: repeat(auto-fit, minmax(1, 25rem) 1fr );
+        padding-left: 10px;
+   }
+
+   .segundo-contenedor{
+    flex-direction: column;
+    max-width: 1200px;
+    height: auto;
+    
+    grid-auto-flow: dense;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fit, minmax(1, 25rem) 1fr );
+    margin: 0;
+   }
+
+   .tercer-contenedor{
+    flex-direction: column;
+    max-width: 1200px;
+    height: auto;
+    grid-auto-flow: dense;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fit, minmax(1, 25rem) 1fr );
+    
+
+   }
+}

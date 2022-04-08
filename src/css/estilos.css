@@ -482,7 +482,7 @@ body{
   .boton2{
     position: absolute;
     top: 45%;
-   left: 17%;
+   left: 12%;
 }
 
 .contenedor-medio{
@@ -516,7 +516,7 @@ body{
     gap: 1rem;
     grid-auto-flow: dense;
     grid-auto-rows: 22rem;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
     text-align: center;
     justify-content: center;
     font-size: 14px;
@@ -541,11 +541,100 @@ body{
    
 }
 
-   }
+   
   }
 
 
   @media screen and (min-width: 1200px) {
+    header{
+        grid-area: header;
+        flex-direction: row;
+        max-width: 1500px;
+        gap: 1rem;
+        grid-auto-flow: dense;
+        grid-auto-rows: 22rem;
+        grid-template-columns: repeat(auto-fit, minmax(1, 25rem) 1fr );
+        padding-left: 10px;
+   }
+   
+
   
+    .contenedor-sup h2{
+        font-size: 20px;
+     padding: 10px;
+    } 
+
+    .contenedor-sup h1{
+        padding: 10px;
+        font-size: 30px;
+        position: absolute;
+        top: 35%;
+        margin-left: 2rem;
+    }
+  
+  
+
+  .boton2{
+    position: absolute;
+    top: 45%;
+   left: 12%;
+}
+
+.contenedor-medio{
+    max-width: 1500px;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(1, 25rem) 1fr );
+}
+  
+
+   .contenedor-sup{
+    display: grid;
+    max-width: 1500px;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    text-align: center;
+    justify-content: center;
+  
+    width: 100%;
+    height: 400px;
+ 
+}
+
+
+.contenedor-inferior{
+    display: grid;
+    max-width: 1500px;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+
+
+  
+
+
+
+}
+.items-inferiores{
+    grid-auto-flow: dense;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    text-align: center;
+    justify-content: center;
+    margin-top: 3rem;
+    text-align: center;
+    justify-content: center;
+   
+}
+
    }
 

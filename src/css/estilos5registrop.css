@@ -209,3 +209,62 @@ footer{
     background-color: #191919;
     color: white;
 }
+
+
+@media screen and (min-width: 320px ) {
+    header{
+        grid-area: header;
+        flex-direction: column;
+        max-width: 700px;
+        height: 200px;
+        grid-auto-flow: dense;
+        grid-auto-rows: 22rem;
+        grid-template-columns: repeat(auto-fit, minmax(1, 25rem) 1fr );
+        padding-left: 10px;
+   }
+}
+
+@media screen and (min-width: 700px ) {
+    header{
+        grid-area: header;
+        flex-direction: column;
+        max-width: 1024px;
+        height: auto;
+        grid-auto-flow: dense;
+        grid-auto-rows: 22rem;
+        grid-template-columns: repeat(auto-fit, minmax(1, 25rem) 1fr );
+        padding-left: 10px;
+   }
+
+   .contenedor-gris{
+
+        grid-auto-flow: dense;
+        grid-auto-rows: 22rem;
+        grid-template-columns: repeat(auto-fit, minmax(1, 25rem) 1fr );
+    
+}
+
+@media screen and (min-width: 1024px ) {
+    header{
+        grid-area: header;
+        flex-direction: column;
+        max-width: 1200px;
+        height: 200px;
+        grid-auto-flow: dense;
+        grid-auto-rows: 22rem;
+        grid-template-columns: repeat(auto-fit, minmax(1, 25rem) 1fr );
+        padding-left: 10px;
+   }
+}
+@media screen and (min-width: 1200px ) {
+    header{
+        grid-area: header;
+        flex-direction: column;
+        max-width: 1500px;
+        height: 200px;
+        grid-auto-flow: dense;
+        grid-auto-rows: 22rem;
+        grid-template-columns: repeat(auto-fit, minmax(1, 25rem) 1fr );
+        padding-left: 10px;
+   }
+}

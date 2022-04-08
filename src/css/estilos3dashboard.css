@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Poppins', sans-serif; 
-    font-size: 16px;
+    font-size: 14px;
 }
 
 :root{
@@ -84,7 +84,7 @@ body{
     position: relative;
     text-align: right;
 }
-.usuario button{
+.boton2{
     align-items: center;
     width: 120px;
     height: 40px;
@@ -96,7 +96,7 @@ body{
     border-radius: 4px; 
     cursor: pointer;
 }
-.usuario i{
+ i{
     align-items: center;
     background-color: var(--white-color--);
     width: 30px;
@@ -105,4 +105,18 @@ body{
     margin-right: 10px;
     border-radius: 50%;
     border: 2px solid var(--orange-color);
+ }
+
+    .documento{
+   
+    text-align: center;
+    justify-content: center;
+
+
+    }
     
+     h1{
+      
+        text-align: center;
+        justify-content: center;
+    }
