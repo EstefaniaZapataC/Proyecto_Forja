@@ -18,13 +18,17 @@ body{
     font-size: 14px;
 }
 
+
 header{
-    background-color: #191919;
+    background-color:black;
+    background-size: 100%;
+    width:100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px; 
-    padding-right: 2rem;
+   
+  
 }
 
 header button{
@@ -32,21 +36,22 @@ header button{
     padding: 5px;
 }
 
+
+
 .medio{
     background-image: url(../img/franja.png);
     width: 100%;
     height: 60px;
     border-bottom: 3px solid var(--blue-color);
+    margin: 0 0 10% 0;
 
 }
 
 .segundo-contenedor{
     display: flex;
     justify-content: space-between;
-    margin-top: 5rem;
-    margin-left: 8rem;
-    margin-bottom: 3rem;
-   
+   margin: 0% 15% 0% 15%;
+   padding: 0% 10% 0 10%;
 }
 
 .segundo{
@@ -58,15 +63,20 @@ header button{
 
 .add-boton{
 background-color: var(--naranja-color) ;
-margin-left: rem;
+
+width: 150%;
+height: 120%;
 border-color: var(--naranja-color);
 border-radius: 5px;
 color: white;
 font-weight: 400;
-padding: 3px 5px 4px 5px;
+padding: 3% 5% 4% 5%;
 }
 
+
 .cuadro{
+ 
+    height: 120%;
     margin-left: 40rem;
     color:gray;
     border: 2px solid var(--blue-color);
@@ -75,6 +85,8 @@ padding: 3px 5px 4px 5px;
 }
 
 .button3{
+ 
+   height: 120%;
     background-color: var(--dark-blue-color);
     color: white;
     border-radius: 5px;
@@ -83,20 +95,24 @@ padding: 3px 5px 4px 5px;
 h1 {
     display: flex;
     justify-content: center;
+    text-align: center;
+    align-items: center;
     font-size: 30px;
     color: #1d1b45;
     text-decoration: underline;
     font-weight: 300;
-    margin-right: 20rem;
+
 }
 
 .tercer-contenedor{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 5rem;
-    margin-right: 15rem;
-    margin-bottom: 3rem;
+    align-content: center;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 15%;
+
     padding-top: 3rem
 }
 
@@ -134,55 +150,17 @@ h1 {
     border: 1px solid var(--rojo-color);
     border-radius: 5px;
 } 
+footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: #191919;
+    color: white;
+    margin: 20% 0 0 0;
+}
 
-@media screen and (min-width: 320px ) {
-    header{
-        grid-area: header;
-        flex-direction: column;
-        max-width: 700px;
-        height: 200px;
-        grid-auto-flow: dense;
-        grid-auto-rows: 22rem;
-        grid-template-columns: repeat(auto-fit, minmax(1, 25rem) 1fr );
-        padding-left: 10px;
-   }
-   .segundo-contenedor{
-    flex-direction: column;
-    max-width: 700px;
-    height: auto;
-    grid-auto-flow: dense;
-    grid-auto-rows: 22rem;
-    grid-template-columns: repeat(auto-fit, minmax(1, 25rem) 1fr );
-    padding-left: 10px;
-   }
 
-   .tercer-contenedor{
-    flex-direction: column;
-    max-width: 700px;
-    height: auto;
-    grid-auto-flow: dense;
-    grid-auto-rows: 22rem;
-    grid-template-columns: repeat(auto-fit, minmax(1, 25rem) 1fr );
-    padding-left: 10px;
-
-   }
-  
-
-   .tabla{
-    flex-direction: column;
-    grid-auto-flow: dense;
-    grid-auto-rows: 15rem;
-    grid-template-columns: repeat(auto-fit, minmax(1, 40rem) 6fr );
-    justify-content: left;
-    margin: 0;
-    
-  
-   }
-
-   table {
-       display: block;
-       overflow-x: auto;
-   }
 
 @media screen and (min-width: 700px ) {
     header{
