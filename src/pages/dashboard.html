@@ -9,9 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Dashboard Forja</title>
     <meta name="author" content="Estefania Zapata"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <meta name="descriptiopn" content="desarrollo proyecto modulo dos practica de lenguajes html y css"/>
     <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://kit.fontawesome.com/45aef3cf00.js" crossorigin="anonymous"></script>
     
@@ -33,11 +34,11 @@
                 <button class="boton2"><i class="fa-solid fa-user"></i>Estefania Z</button>
             </div>    
 
+            <h1 class="bienvenidos" >BIENVENIDOS</h1>
             <div class="documento">
-              <h1>BIENVENIDOS</h1>
-                <input  name="Doc" id="Doc" type="text" placeholder="Digite número de documento">
-                <button class="boton1"><i class="fa-solid fa-magnifying-glass"></i></button> 
-                <button class="boton1"><i class="fa-solid fa-arrow-rotate-right"></i></button> 
+                <input   name="doc" id="doc" type="text" placeholder="Digite número de documento">
+                <button  type="button"  onclick="buscar()"id="boton1" ><i class="fa-solid fa-magnifying-glass"></i></button> 
+                <button id="boton1"><i class="fa-solid fa-arrow-rotate-right"></i></button> 
             </div>
 
            
@@ -46,6 +47,6 @@
 
     </main>    
 
-    
+    <script src="../js/dashboard.js"></script>
 </body>
 </html>

@@ -26,12 +26,14 @@ body{
 }
 
 
-.boton-in{
-    background-color: var(--naranja-color);
+.ingresar{
+    font-family:'Poppins', sans-serif; 
+    font-size: 14px;
+    background-color:#f3610e;
     color: white;
-    border-color: var(--gray-color);
+    border-color:dimgray;
     border-radius: 5px;
-    padding: 2px 10px 2px 10px;
+    padding:0.5% 5% 0.5% 5%;
     font-weight: 300;
 }
 
@@ -51,6 +53,12 @@ body{
         border-radius: 15px;
         margin: 0;
 
+}
+
+form, input{
+    font-family:'Poppins', sans-serif; 
+  
+    padding: 2% 5%;
 }
 
 .logo{
@@ -73,6 +81,10 @@ body{
     justify-items: flex-end;
 }
 
+.form, a{
+    font-size: 12px;
+    color: black;
+}
 
 .formulario input{
     background-color:lightblue;
@@ -95,10 +107,13 @@ body{
 }
 
 .volver{
+    width: 110%;
+    font-family:'Poppins', sans-serif; 
+    padding: 1% 2%;
     background-color: #1d1b45;
     color: white;
     border-radius: 5px;
-     border-color: var(--blue-color);
+     border-color:#2ca3ab;
      font-size: 14px;
 }
 
@@ -107,14 +122,4 @@ body{
     justify-content: right;
 }
 
-@media screen and (min-width: 320px ) {
-    .login{
-        grid-area: login;
-        max-width: 700px;
-        height: 200px;
-        grid-auto-flow: dense;
-        grid-auto-rows: 22rem;
-        grid-template-columns: repeat(auto-fit, minmax(1, 25rem) 1fr );
-        padding-left: 10px;
-    }
-}
+
