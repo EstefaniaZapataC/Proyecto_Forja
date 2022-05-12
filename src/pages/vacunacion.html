@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/vacunacion.css">
+    <title>Vacunacion Forja</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/45aef3cf00.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/45aef3cf00.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../img/0. logoforja.png">
+        </div>
+
+        <div class="iconos">
+            <a href="dashboard.html"><i class="fa-solid fa-house-user fa-2x"></i></a>
+            <a href="login.html"><i class="fa-solid fa-power-off fa-2x"></i></a>
+        </div>
+    </header>
+
+    <div class="medio">.</div>
+    
+        <section class="linea1">
+            <p>Estado: Activo</p>
+
+            <div class="button">
+                <button class="save"><a href="#" id="guardar" class="btn-alert" >Guardar cambios</a></button>
+                <button class="save"><a href="/dashboard.html">Cerrar</button></a>
+            </div>
+        </section>
+
+        <div class="tittle">
+            <h3>INFORMACION DEL PACIENTE</h3>
+        </div>
+
+        <div class="container">
+            <div class="area1"> 
+                <div class="fechaDeRegistro">
+                    <input type="date" id="date" name="date" min="2000-01-01" max="2022-06-30" required>
+
+                    <input name="Registro" id="registro" type="text" placeholder="No. de Registro" required>
+                </div>
+                <div class="titulo1">
+                  
+                    <p>DATOS PERSONALES</p>
+                </div>
+                <div class="inputs">
+                    <div class="renglon1">
+                        <input name="Nombre" id="nombre" type="text" placeholder="Nombres" required>
+
+                        <input name="Apellidos" id="apellidos" type="text" placeholder="Apellidos" required>
+                    </div>
+
+                    <div class="renglon2">
+                        <input name="identificacion" id="identificacion" type="text" placeholder="Numero de identificacion" required>
+
+                        <input type="date" id="dateNac" name="date" min="2000-01-01" max="2022-06-30" required>
+                    </div>
+
+                    <div class="renglon3">
+                        <input type="number" placeholder="Edad" id="edad" required>
+
+                        <select name="eps" id="eps" required>
+                            <option disabled selected>EPS</option>
+                            <option value="0">Salud Colmena</option>
+                            <option value="1">Salud Total</option>
+                            <option value="2">Cafesalud</option>
+                            <option value="3">Sanitas</option>
+                            <option value="4">Compensar</option>
+                            <option value="5">Saludcoop</option>
+                            <option value="6">Coomeva</option>
+                            <option value="7">Famisanar</option>
+                            <option value="8">Cruz Blanca</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="area2">
+                <div class="titulo2">
+                
+                    <p>INFORMACION DE VACUNACION</p>
+                </div>
+                <div class="inputs2">
+                    <div class="renglon1">
+                        <select name="sedes" id="sedes" required>
+                            <option disabled selected>Sede</option>
+                            <option value="0">Circunvalar</option>
+                            <option value="1">Corferias</option>
+                            <option value="2">Suba</option>
+                            <option value="3">Bosa</option>
+                            <option value="4">Centro</option>
+                        </select>
+
+                        <select name="sedes" id="quienLoVacuno" required>
+                            <option disabled selected>¿Quien lo vacunó?</option>
+                            <option value="0">Maria Fernandez</option>
+                            <option value="1">Laura Osorio</option>
+                            <option value="2">Javier Merlano</option>
+                        </select>
+                    </div>
+
+                    <div class="renglon2">
+                        <input name="idProfesional" id="idProfesional" type="text" placeholder="ID del Profesional"
+                            required>
+
+                        <select name="dosis" id="dosis" required>
+                            <option disabled selected>Dosis</option>
+                            <option value="0">Primera vez</option>
+                            <option value="1">Segunda vez</option>
+                            <option value="2">Tercera vez</option>
+                            <option value="3">Refuerzo</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="input3">
+                    <select name="biologico" id="biologico" required>
+                        <option disabled selected>Biologico</option>
+                        <option value="0">Vacuna Pfizer</option>
+                        <option value="1">Vacuna SinoVac</option>
+                        <option value="2">Vacuna Johnson & Johnson</option>
+                        <option value="3">Vacuna Moderna</option>
+                        <option value="4">Vacuna Oxford, AstraZeneca</option>
+                    </select>
+
+                    <input name="fechaDosis" id="biologico" type="text" placeholder="Fecha 1ra Dosis" required>
+
+                    <input name="fecha2daDosis" id="biologico" type="text" placeholder="Fecha 2da Dosis" required>
+                </div>
+
+                <div class="observaciones">
+                    <textarea name="observacion" id="observacion" cols="40" rows="7"
+                        placeholder="Observaciones adicionales"></textarea>
+                </div>
+            </div>
+        </div>
+        <script src="../js/dashboard.js"></script>
+</body>
+</html>
