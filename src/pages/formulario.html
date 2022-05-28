@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <title>Registro Forja</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/45aef3cf00.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/45aef3cf00.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../img/0. logoforja.png">
+        </div>
+
+        <div class="iconos">
+            <a href="dashboard.html"><i class="fa-solid fa-house-user fa-2x"></i></a>
+            <a href="login.html"><i class="fa-solid fa-power-off fa-2x"></i></a>
+        </div>
+    </header>
+
+    <div class="h1">
+        <div class="hh1"> 
+           <h1> REGISTRO USUARIO NUEVO</h1>
+        </div>
+    </div>
+
+    
+
+        <div class="container">
+            <div class="area1"> 
+                <div class="fechaDeRegistro">
+                    <input type="date" id="date" name="date" min="2000-01-01" max="2022-06-30" required>
+
+                    <input name="Registro" id="registro" type="text" placeholder="No. de Registro" required>
+                </div>
+                <div class="titulo1">
+                  
+                    <p>DATOS PERSONALES</p>
+                </div>
+                <div class="inputs">
+                    <div class="renglon1">
+                        <input name="Nombre" id="nombre" type="text" placeholder="Nombres" required>
+
+                        <input name="Apellidos" id="apellidos" type="text" placeholder="Apellidos" required>
+                    </div>
+
+                    <div class="renglon2">
+                        <input name="identificacion" id="identificacion" type="text" placeholder="Numero de identificacion" required>
+                        
+                        <select name="eps" id="eps" required>
+                            <option disabled selected>Tipo dedocumento</option>
+                            <option value="0">Cedula de ciudadania</option>
+                            <option value="1">Cedula de extranjeria</option>
+                            <option value="2">Tarjeta de identidad</option>
+                            <option value="3">Pasaporte</option>
+                        
+                        </select>
+                        
+                    </div>
+
+                    <div class="renglon3">
+
+                        <input type="date" id="dateNac" name="date" min="2000-01-01" max="2022-06-30" required>
+                       
+
+                        
+                        <input type="number" placeholder="Edad" id="edad" required>
+                    </div>
+                </div>
+            </div>
+            <div class="area2">
+                <div class="titulo2">
+                
+                    <p>INFORMACION DE CONTACTO</p>
+                </div>
+                <div class="inputs2">
+                    <div class="renglon1">
+                        <select name="sedes" id="sedes" required>
+                            <option disabled selected>Departamento de residencia</option>
+                            <option value="0">Amazonas</option>
+                            <option value="1">Cundinamarca</option>
+                            <option value="2">Huila</option>
+                            <option value="3">Atlantico</option>
+                            <option value="4">Boyaca</option>
+                            <option value="5">Meta</option>
+                            <option value="6">Norte de Santander</option>
+                            <option value="7">Otro..</option>
+
+
+                        </select>
+
+                        <select name="sedes" id="quienLoVacuno" required>
+                            <option disabled selected>Municipio de residencia</option>
+                            <option value="0">Maria Fernandez</option>
+                            <option value="1">Laura Osorio</option>
+                            <option value="2">Javier Merlano</option>
+                            <option value="3">Maria Fernandez</option>
+                            <option value="4">Laura Osorio</option>
+                            <option value="5">Javier Merlano</option>
+                            <option value="6">Otro...</option>
+                        </select>
+                    </div>
+
+                    <div class="renglon2">
+                        <input name="idProfesional" id="idProfesional" type="text" placeholder="Direccion"
+                            required>
+                            <input name="idProfesional" id="idProfesional" type="text" placeholder="Correo"
+                            required>
+                        
+                    </div>
+                </div>
+
+
+                <div class="input3">
+                
+                    <input name="telefonofijo" id="telefonofijo" type="number" placeholder="Telefono Fijo" required>
+
+                    <input name="celular" id="celular" type="number" placeholder="Celular" required>
+                </div>
+
+    
+                <div class="area3">
+                    <div class="titulo3">
+                    
+                        <p>ESTADO DE SALUD</p>
+                    </div>
+                    <div class="inputs2">
+                        <div class="renglon1">
+                            <select name="discapacidad" id="discapacidad" required>
+                                <option disabled selected>Discapacidad</option>
+                                <option value="0">Si</option>
+                                <option value="1">No</option>
+                            
+                            </select>
+        
+                            <select name="Preexistencias" id="Preexistencias" required>
+                                <option disabled selected>Preexistencias</option>
+                                <option value="0">Siz</option>
+                                <option value="1">No</option>
+                            
+                            </select>
+        
+                            <select name="alergias" id="alergias" required>
+                                <option disabled selected>Alergias</option>
+                                <option value="0">Siz</option>
+                                <option value="1">No</option>
+                            </select> 
+                       
+            </div>
+    
+        <div class="contenedor-inferior">
+            <div>
+                <p class="texpruebaCovid1">¿El paciente se ha realizado la prueba de covid con anterioridad y esta ha salido positiva?</p>
+            </div>
+            <div class="btn-si-no">
+                <input name="pruebaCovid" id="pruebaCovid" type="radio"required="required">SI 
+                <input name="pruebaCovid" id="pruebaCovid" type="radio" required="required">NO
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <p class="texpruebaCovid">¿El paciente ha tenido un contacto estrecho con una persona confirmada o sospechosa COVID-19 en los ultimos 14 dias?</p>
+            </div>
+            <div class="btn-si-no">
+                <input name="pruebaCovid" id="pruebaCovid" type="radio"  required="required">SI
+                <input name="pruebaCovid" id="pruebaCovid" type="radio" required="required">NO
+            </div>
+        </div>
+
+        </div>
+        
+        </div>
+
+       
+
+        
+              
+        </div>
+        
+    </div>
+
+      
+    <div class="guardar-div">
+        <input type="submit" value="Guardar" name="Guardar" id="descripcion">
+    </div>     
+
+        <script src="../js/dashboard.js"></script>
+</body>
+<footer>
+       
+    <p>© 2021 FORJA EMPRESAS</p>
+  
+  </footer>
+</html>
